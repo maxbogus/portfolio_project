@@ -3,71 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
-    <link href="css/main.css">
+    <title> Max Boguslavskiy: Portfolio site </title>
+    <link href='//fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.2.0/css/zocial.css">
 </head>
 <body>
-<header>
-    <div>
-        <picture>
-            <img src="images_src/logo.jpg" alt="Logo" width="150" height="150">
-        </picture>
-        <h1>Max Boguslavskiy</h1>
-        <h3>Full Stack Web Developer</h3>
-    </div>
-</header>
-<hr>
-<article>
-    <picture>
-        <source srcset="//placehold.it/800x300">
-        <img src="//placehold.it/800x300">
-    </picture>
-    <p>
-        Hello! My name is Max Boguslavsky. I working in IT industry for 8+ years. I worked in Acronis, Innova, Luxoft
-        and Superscape. Currently i'm working as a Head of QA department in Bani.ru.
-    </p>
-    <div>
-        <h2>Featured Work</h2>
-        <div>
-            <a href="//www.slideshare.net/maxbogus/">
-                <figure>
-                    <picture>
-                        <source srcset="//placehold.it/100x100">
-                        <img src="//placehold.it/100x100">
-                    </picture>
-                    <figcaption>Slideshare</figcaption>
-                </figure>
-            </a>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4">
+            <picture>
+                <img class="img-responsive" src="images_src/logo.jpg" alt="Logo" width="150" height="150">
+            </picture>
         </div>
-        <div>
+        <div class="col-xs-8 text-right">
+            <h1>Max Boguslavsky</h1>
+            <h4>Full Stack Web Developer</h4>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-xs-12">
+            <hr>
+        </div>
+        <div class="col-xs-12">
+            <picture>
+                <source srcset="img/800300.png" media="(min-width: 800px)">
+                <img class="img-responsive" src="img/500150.png" alt="Main Image">
+            </picture>
+        </div>
+        <div class="col-xs-12 justify">
+            <p>
+                Hello! My name is Max Boguslavsky. I working in IT industry for 8+ years. I worked in Acronis, Innova,
+                Luxoft and Superscape. Currently i'm working as a Head of QA department in Bani.ru.
+            </p>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-xs-12 col-sm-12 col-lg-12 text-left">
+            <h2>Featured Work</h2>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <picture>
+                <source srcset="//placehold.it/300x200">
+                <img class="img-responsive" src="//placehold.it/100x100">
+            </picture>
+            <h3 class="text-uppercase">GitHub</h3>
             <a href="//github.com/maxbogus">
-                <figure>
-                    <picture>
-                        <source srcset="//placehold.it/100x100">
-                        <img src="//placehold.it/100x100">
-                    </picture>
-                    <figcaption>GitHub</figcaption>
-                </figure>
+                <p>Some examples of my work.</p>
             </a>
         </div>
-        <div>
+        <div class="col-xs-12 col-sm-6">
+            <picture>
+                <source srcset="//placehold.it/300x200">
+                <img class="img-responsive" src="//placehold.it/100x100">
+            </picture>
+            <h3 class="text-uppercase">Codewars</h3>
             <a href="//www.codewars.com/r/WcTjGg">
-                <figure>
-                    <picture>
-                        <source srcset="//placehold.it/100x100">
-                        <img src="//placehold.it/100x100">
-                    </picture>
-                    <figcaption>Codewars</figcaption>
-                </figure>
+                <p>My code combat ground.</p>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <picture>
+                <source srcset="//placehold.it/300x200">
+                <img class="img-responsive" src="//placehold.it/100x100">
+            </picture>
+            <h3 class="text-uppercase">Slideshare</h3>
+            <a href="//www.slideshare.net/maxbogus/">
+                <p>Slides from my presentations.</p>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <picture>
+                <source srcset="//placehold.it/300x200">
+                <img class="img-responsive" src="//placehold.it/100x100">
+            </picture>
+            <h3 class="text-uppercase">Blogger</h3>
+            <a href="//maxbogus.blogspot.ru/">
+                <p>My articles</p>
             </a>
         </div>
     </div>
-</article>
-<footer>
-    <div>
-        <a href="//www.facebook.com/maxbogusblog/">Facebook</a><a href="//maxbogus.blogspot.ru/">Blogger</a><a
-            href="//www.linkedin.com/in/maxbogus">Linkedin</a><a href="//www.instagram.com/maxbogus/">Instagram</a>
+    <div class="row text-center">
+        <div class="col-xs-6"><a href="//www.instagram.com/maxbogus/" class="zocial instagram">Instagram</a></div>
+        <div class="col-xs-6"><a href="//www.facebook.com/maxbogusblog/" class="zocial facebook">Facebook</a></div>
+        <div class="col-xs-12"><p>© Created by Max Boguslavsky</p></div>
     </div>
-</footer>
+</div>
 </body>
 </html>

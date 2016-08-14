@@ -1,3 +1,12 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+    color: #7d97ad;
+}
+
 .logo {
     color: #02b3e4;
 }
@@ -6,6 +15,21 @@
     color: #2d3c49;
 }
 
-h2 {
-    color: #7d97ad;
+.img-responsive, .social {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 543px) {
+
+}
+
+@media screen and (min-width: 991px) {
+    .container {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
