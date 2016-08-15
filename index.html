@@ -8,6 +8,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.2.0/css/zocial.css" rel="stylesheet">
+    <link rel="icon" href="img/icon256-wide.png">
 </head>
 <body>
 <div class="container">
@@ -15,7 +16,8 @@
         <div class="row">
             <div class="col-xs-4">
                 <picture>
-                    <img class="img-responsive" src="images_src/logo.jpg" alt="Logo" width="150" height="150">
+                    <source srcset="img/logo-wide.jpg" media="(min-width: 800px)">
+                    <img class="img-responsive" src="img/logo-small.jpg" alt="Logo" width="150" height="150">
                 </picture>
             </div>
             <div class="col-xs-8 text-right">
@@ -31,8 +33,8 @@
             </div>
             <div class="col-xs-12">
                 <picture>
-                    <source srcset="img/800300.png" media="(min-width: 800px)">
-                    <img class="img-responsive" src="img/500150.png" alt="Main Image">
+                    <source srcset="img/clouds-wide.jpg" media="(min-width: 800px)">
+                    <img class="img-responsive" src="img/clouds-small.jpg" alt="Main Image">
                 </picture>
             </div>
             <div class="col-xs-12 justify">
@@ -48,8 +50,8 @@
             </div>
             <div class="col-xs-12 col-sm-6">
                 <picture>
-                    <source srcset="//placehold.it/300x200">
-                    <img class="img-responsive" src="//placehold.it/100x100">
+                    <source srcset="img/github-wide.png" media="(min-width: 800px)">
+                    <img class="img-responsive" src="img/github-small.png">
                 </picture>
                 <h3 class="text-uppercase">GitHub</h3>
                 <a href="//github.com/maxbogus">
@@ -58,8 +60,8 @@
             </div>
             <div class="col-xs-12 col-sm-6">
                 <picture>
-                    <source srcset="//placehold.it/300x200">
-                    <img class="img-responsive" src="//placehold.it/100x100">
+                    <source srcset="img/codewars-wide.png" media="(min-width: 800px)">
+                    <img class="img-responsive" src="img/codewars-small.png">
                 </picture>
                 <h3 class="text-uppercase">Codewars</h3>
                 <a href="//www.codewars.com/r/WcTjGg">
@@ -68,8 +70,8 @@
             </div>
             <div class="col-xs-12 col-sm-6">
                 <picture>
-                    <source srcset="//placehold.it/300x200">
-                    <img class="img-responsive" src="//placehold.it/100x100">
+                    <source srcset="img/slideshare-wide.png" media="(min-width: 800px)">
+                    <img class="img-responsive" src="img/slideshare-small.png">
                 </picture>
                 <h3 class="text-uppercase">Slideshare</h3>
                 <a href="//www.slideshare.net/maxbogus/">
@@ -78,8 +80,8 @@
             </div>
             <div class="col-xs-12 col-sm-6">
                 <picture>
-                    <source srcset="//placehold.it/300x200">
-                    <img class="img-responsive" src="//placehold.it/100x100">
+                    <source srcset="img/movie_site-wide.png" media="(min-width: 800px)">
+                    <img class="img-responsive" src="img/movie_site-small.png">
                 </picture>
                 <h3 class="text-uppercase">Movie Site</h3>
                 <a href="//maxbogus.github.io/movie_trailer_website/fresh_tomatoes.html">
@@ -90,10 +92,18 @@
     </section>
     <footer>
         <div class="row text-center">
-            <div class="col-xs-6"><a href="//www.instagram.com/maxbogus/" class="zocial instagram">Instagram</a></div>
-            <div class="col-xs-6"><a href="//www.facebook.com/maxbogusblog/" class="zocial facebook">Facebook</a></div>
-            <div class="col-xs-12"><a href="//maxbogus.blogspot.ru/" class="zocial blogger">Blogger</a></div>
-            <div class="col-xs-12"><p>© Created by Max Boguslavsky</p></div>
+            <div class="col-xs-12 col-sm-4">
+                <a href="//www.instagram.com/maxbogus/" class="zocial instagram">Instagram</a>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <a href="//www.facebook.com/maxbogusblog/" class="zocial facebook">Facebook</a>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <a href="//maxbogus.blogspot.ru/" class="zocial blogger">Blogger</a>
+            </div>
+            <div class="col-xs-12">
+                <p>© Created by Max Boguslavsky</p>
+            </div>
         </div>
     </footer>
 </div>
