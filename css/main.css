@@ -15,15 +15,12 @@ h2 {
     color: #2d3c49;
 }
 
-.img-responsive, .social {
+.img-responsive,
+.social {
     display: block;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-}
-
-@media screen and (min-width: 543px) {
-
 }
 
 @media screen and (min-width: 991px) {
