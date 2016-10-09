@@ -9,6 +9,7 @@ Portfolio of Maxim Boguslavskiy
     tasks performed to make img for project.
  - package.json:
     libs used by Grunt
+
 # Update:
     To update images you have to perform two tasks:
         1. Install Grunt
