@@ -38,3 +38,8 @@ h4 {
         margin-right: auto;
     }
 }
+
+a.disabled {
+    color: gray;
+    text-decoration: none;
+}
