@@ -5,7 +5,10 @@ var projectObjects = [
         "url": "https://maxbogus.github.io/Neighborhood_Map_Project/",
         "github": "//github.com/maxbogus/fullstack-nanodegree-vm/tree/master/vagrant/catalog",
         "wide_img": "img/neighborhood_map-wide.png",
-        "small_img": "img/neighborhood_map-small.png"
+        "small_img": "img/neighborhood_map-small.png",
+        "skills": [
+            "JavaScript", "HTML", "CSS", "Knockout", "AJAX", "JavaScript frameworks"
+        ]
     },
     {
         "name": "Organizational structure",
@@ -13,7 +16,10 @@ var projectObjects = [
         "url": null,
         "github": "//github.com/maxbogus/fullstack-nanodegree-vm/tree/master/vagrant/catalog",
         "wide_img": "img/org_structure-wide.png",
-        "small_img": "img/org_structure-small.png"
+        "small_img": "img/org_structure-small.png",
+        "skills": [
+            "Python", "Flask", "HTML", "CSS", "SQL"
+        ]
     },
     {
         "name": "Tournament",
@@ -21,7 +27,10 @@ var projectObjects = [
         "url": null,
         "github": "//github.com/maxbogus/fullstack-nanodegree-vm/",
         "wide_img": "img/tournament_test-wide.png",
-        "small_img": "img/tournament_test-small.png"
+        "small_img": "img/tournament_test-small.png",
+        "skills": [
+            "Python", "SQL", "Vagrant"
+        ]
     },
     {
         "name": "Blog",
@@ -29,7 +38,10 @@ var projectObjects = [
         "url": "//blog-140923.appspot.com/",
         "github": "//github.com/maxbogus/fullstack-nanodegree-vm/",
         "wide_img": "img/blog_project-wide.png",
-        "small_img": "img/blog_project-small.png"
+        "small_img": "img/blog_project-small.png",
+        "skills": [
+            "Python", "Google App Engine", "HTML"
+        ]
     },
     {
         "name": "Movie Site",
@@ -37,7 +49,10 @@ var projectObjects = [
         "url": "//maxbogus.github.io/movie_trailer_website/fresh_tomatoes.html",
         "github": "//github.com/maxbogus/fullstack-nanodegree-vm/",
         "wide_img": "img/movie_site-wide.png",
-        "small_img": "img/movie_site-small.png"
+        "small_img": "img/movie_site-small.png",
+        "skills": [
+            "Python", "CSS", "HTML"
+        ]
     }
 ];
 
