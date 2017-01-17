@@ -39,7 +39,15 @@ h4 {
     }
 }
 
+a.disabled,
+a#codewars {
+    text-decoration: none;
+}
+
 a.disabled {
     color: gray;
-    text-decoration: none;
+}
+
+a#codewars img {
+    width: 32px;
 }
