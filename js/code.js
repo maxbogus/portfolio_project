@@ -64,6 +64,7 @@ var Project = function (data) {
     this.github = ko.observable(data.github);
     this.wide_img = ko.observable(data.wide_img);
     this.small_img = ko.observable(data.small_img);
+    this.skills = ko.observableArray(data.skills);
 
     this.showUrl = ko.computed(function () {
         return null === self.url();
