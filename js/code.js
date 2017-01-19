@@ -75,6 +75,16 @@ var ViewModel = function () {
     var self = this;
 
     this.projects = ko.observableArray([]);
+    self.filtered = ko.observable();
+
+    this.resetFilter = function () {
+        this.filtered(null)
+    };
+
+    self.filter = function (item) {
+        console.log(item);
+        self.filtered(item);
+    };
 
     projectObjects.forEach(function (project) {
         self.projects().push(new Project(project));
