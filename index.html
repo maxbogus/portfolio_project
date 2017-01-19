@@ -51,8 +51,9 @@
                     <img data-bind="attr: {src: $data.small_img}" class="img-responsive">
                 </picture>
                 <h3 class="text-uppercase" data-bind="text: $data.name"></h3>
-                <div data-bind="foreach: { data: $data.skills, as: 'item' }">
-                    <p data-bind="text:item"></p>
+
+                <div class="btn-group" role="group" data-bind="foreach: { data: $data.skills, as: 'item' }">
+                    <button type="button" class="btn btn-default" data-bind="text:item"></button>
                 </div>
                 <p data-bind="text: $data.description"></p>
                 <p><a data-bind="attr: {href: $data.url}, css: {disabled: $data.showUrl}">Project url</a></p>

@@ -7,7 +7,7 @@ var projectObjects = [
         "wide_img": "img/neighborhood_map-wide.png",
         "small_img": "img/neighborhood_map-small.png",
         "skills": [
-            "JavaScript", "HTML", "CSS", "Knockout", "AJAX", "JavaScript frameworks"
+            "JavaScript", "HTML", "CSS", "KnockoutJS", "AJAX"
         ]
     },
     {
