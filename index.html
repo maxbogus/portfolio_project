@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Max Boguslavskiy: Portfolio site </title>
     <link href='//fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet'>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.2.0/css/zocial.css" rel="stylesheet">
@@ -43,10 +45,9 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-lg-12 text-left">
             <h2>Featured Work</h2>
-            <div class="alert alert-warning alert-dismissible" role="alert"
-                 data-bind="visible: filtered">
+            <div class="alert alert-success alert-dismissible" role="alert"
+                 data-bind="visible: filtered, click: resetFilter">
                 <p> You have chosen <b data-bind="text: filtered"></b>. </p>
-                <button type="button" class="btn" data-bind="click: resetFilter">Clear</button>
             </div>
         </div>
         <div data-bind="foreach: projects">
@@ -58,7 +59,7 @@
                 <h3 class="text-uppercase" data-bind="text: $data.name"></h3>
                 <div class="btn-group btn-group-xs" role="group"
                      data-bind="foreach: { data: $data.skills, as: 'item' }">
-                    <button type="button" class="btn" data-bind="click: $root.filter, text: item"></button>
+                    <button type="button" class="btn btn-default" data-bind="click: $root.filter, text: item"></button>
                 </div>
                 <p data-bind="text: $data.description"></p>
                 <p><a data-bind="attr: {href: $data.url}, css: {disabled: $data.showUrl}">Project url</a></p>
