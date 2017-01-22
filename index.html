@@ -51,7 +51,8 @@
             </div>
         </div>
         <div data-bind="foreach: projects">
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12 col-sm-6"
+                 data-bind="visible: $data.skills.indexOf($parent.filtered())>= 0 || null === $parent.filtered()">
                 <picture>
                     <source data-bind="attr: {srcset: $data.wide_img}" media="(min-width: 800px)">
                     <img data-bind="attr: {src: $data.small_img}" class="img-responsive">
@@ -59,7 +60,8 @@
                 <h3 class="text-uppercase" data-bind="text: $data.name"></h3>
                 <div class="btn-group btn-group-xs" role="group"
                      data-bind="foreach: { data: $data.skills, as: 'item' }">
-                    <button type="button" class="btn btn-default" data-bind="click: $root.setFilter, text: item"></button>
+                    <button type="button" class="btn btn-default"
+                            data-bind="click: $root.setFilter, text: item"></button>
                 </div>
                 <p data-bind="text: $data.description"></p>
                 <p><a data-bind="attr: {href: $data.url}, css: {disabled: $data.showUrl}">Project url</a></p>
