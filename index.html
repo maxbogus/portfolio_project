@@ -59,7 +59,7 @@
                 <h3 class="text-uppercase" data-bind="text: $data.name"></h3>
                 <div class="btn-group btn-group-xs" role="group"
                      data-bind="foreach: { data: $data.skills, as: 'item' }">
-                    <button type="button" class="btn btn-default" data-bind="click: $root.filter, text: item"></button>
+                    <button type="button" class="btn btn-default" data-bind="click: $root.setFilter, text: item"></button>
                 </div>
                 <p data-bind="text: $data.description"></p>
                 <p><a data-bind="attr: {href: $data.url}, css: {disabled: $data.showUrl}">Project url</a></p>
