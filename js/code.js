@@ -75,7 +75,7 @@ var ViewModel = function () {
     var self = this;
 
     this.projects = ko.observableArray([]);
-    self.filtered = ko.observable();
+    self.filtered = ko.observable(null);
 
     this.resetFilter = function () {
         this.filtered(null)
