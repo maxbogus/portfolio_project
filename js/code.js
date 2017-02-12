@@ -1,5 +1,16 @@
 var projectObjects = [
     {
+        "name": "Task queue",
+        "description": "Simple task tracker with server-side.",
+        "url": null,
+        "github": "//github.com/maxbogus/tasks_queue",
+        "wide_img": "img/task_queue-wide.png",
+        "small_img": "img/task_queue-small.png",
+        "skills": [
+            "JavaScript", "Python", "Flask", "AngularJS", "AJAX", "Tornado"
+        ]
+    },
+    {
         "name": "Neighborhood Map",
         "description": "A single-page with an area and various points of interest.",
         "url": "https://maxbogus.github.io/Neighborhood_Map_Project/",
