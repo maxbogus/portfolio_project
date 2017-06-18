@@ -1,5 +1,16 @@
 var projectObjects = [
     {
+        "name": "Driver",
+        "description": "Driver portal.",
+        "url": "https://driver.gett.zone/",
+        "github": null,
+        "wide_img": "img/task_queue-wide.png",
+        "small_img": "img/task_queue-small.png",
+        "skills": [
+            "JavaScript", "Python", "Django", "React", "PostgreSQL", "ES6"
+        ]
+    },
+    {
         "name": "Task queue",
         "description": "Simple task tracker with server-side.",
         "url": null,
@@ -40,7 +51,7 @@ var projectObjects = [
         "wide_img": "img/tournament_test-wide.png",
         "small_img": "img/tournament_test-small.png",
         "skills": [
-            "Python", "SQL", "Vagrant"
+            "Python", "PostgreSQL", "Vagrant"
         ]
     },
     {
@@ -79,6 +90,9 @@ var Project = function (data) {
 
     this.showUrl = ko.computed(function () {
         return null === self.url();
+    });
+    this.showProject = ko.computed(function () {
+        return null === self.github();
     });
 };
 

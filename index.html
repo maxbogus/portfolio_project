@@ -6,8 +6,9 @@
     <title> Max Boguslavskiy: Portfolio site </title>
     <link href='//fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet'>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.2.0/css/zocial.css" rel="stylesheet">
     <link rel="icon" href="img/icon256-wide.png">
@@ -65,7 +66,7 @@
                 </div>
                 <p data-bind="text: $data.description"></p>
                 <p><a data-bind="attr: {href: $data.url}, css: {disabled: $data.showUrl}">Project url</a></p>
-                <p><a data-bind="attr: {href: $data.github}">Github</a></p>
+                <p><a data-bind="attr: {href: $data.github}, , css: {disabled: $data.showProject}">Github</a></p>
             </div>
         </div>
     </section>
