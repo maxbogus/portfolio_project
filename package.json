@@ -7,13 +7,16 @@
   },
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-copy": "^0.8.2",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-nodeunit": "~0.4.1",
-    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^3.0",
+    "grunt-contrib-copy": "^3.2",
+    "grunt-contrib-jshint": "~3.0",
+    "grunt-contrib-nodeunit": "~3.0",
+    "grunt-contrib-uglify": "~3.0",
     "grunt-mkdir": "^0.1.3",
-    "grunt-responsive-images": "^0.1.9"
+    "grunt-responsive-images": "^0.1.9",
+    "install": "^0.10.1",
+    "npm": "^5.0.3"
   },
   "dependencies": {
     "grunt-responsive-images": "^0.1.6"

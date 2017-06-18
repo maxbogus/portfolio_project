@@ -4,8 +4,8 @@ var projectObjects = [
         "description": "Driver portal.",
         "url": "https://driver.gett.zone/",
         "github": null,
-        "wide_img": "img/task_queue-wide.png",
-        "small_img": "img/task_queue-small.png",
+        "wide_img": "img/driver_gett_zone-wide.png",
+        "small_img": "img/driver_gett_zone-small.png",
         "skills": [
             "JavaScript", "Python", "Django", "React", "PostgreSQL", "ES6"
         ]
