@@ -38,3 +38,16 @@ h4 {
         margin-right: auto;
     }
 }
+
+a.disabled,
+a#codewars {
+    text-decoration: none;
+}
+
+a.disabled {
+    color: gray;
+}
+
+a#codewars img {
+    width: 32px;
+}
