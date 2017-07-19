@@ -1,118 +1,185 @@
-var projectObjects = [
-    {
-        "name": "Driver",
-        "description": "Driver portal.",
-        "url": "https://driver.gett.zone/",
-        "github": null,
-        "wide_img": "img/driver_gett_zone-wide.png",
-        "small_img": "img/driver_gett_zone-small.png",
-        "skills": [
-            "JavaScript", "Python", "Django", "React", "PostgreSQL", "ES6"
-        ]
-    },
-    {
-        "name": "Task queue",
-        "description": "Simple task tracker with server-side.",
-        "url": null,
-        "github": "//github.com/maxbogus/tasks_queue",
-        "wide_img": "img/task_queue-wide.png",
-        "small_img": "img/task_queue-small.png",
-        "skills": [
-            "JavaScript", "Python", "Flask", "AngularJS", "AJAX", "Tornado"
-        ]
-    },
-    {
-        "name": "Neighborhood Map",
-        "description": "A single-page with an area and various points of interest.",
-        "url": "https://maxbogus.github.io/Neighborhood_Map_Project/",
-        "github": "//github.com/maxbogus/fullstack-nanodegree-vm/tree/master/vagrant/catalog",
-        "wide_img": "img/neighborhood_map-wide.png",
-        "small_img": "img/neighborhood_map-small.png",
-        "skills": [
-            "JavaScript", "HTML", "CSS", "KnockoutJS", "AJAX"
-        ]
-    },
-    {
-        "name": "Organizational structure",
-        "description": "Small crud application to visualize organizational structure.",
-        "url": null,
-        "github": "//github.com/maxbogus/fullstack-nanodegree-vm/tree/master/vagrant/catalog",
-        "wide_img": "img/org_structure-wide.png",
-        "small_img": "img/org_structure-small.png",
-        "skills": [
-            "Python", "Flask", "HTML", "CSS", "SQL"
-        ]
-    },
-    {
-        "name": "Tournament",
-        "description": "Swiss system tournament system.",
-        "url": null,
-        "github": "//github.com/maxbogus/fullstack-nanodegree-vm/",
-        "wide_img": "img/tournament_test-wide.png",
-        "small_img": "img/tournament_test-small.png",
-        "skills": [
-            "Python", "PostgreSQL", "Vagrant"
-        ]
-    },
-    {
-        "name": "Blog",
-        "description": "Multi-user blog application.",
-        "url": "//blog-140923.appspot.com/",
-        "github": "//github.com/maxbogus/fullstack-nanodegree-vm/",
-        "wide_img": "img/blog_project-wide.png",
-        "small_img": "img/blog_project-small.png",
-        "skills": [
-            "Python", "Google App Engine", "HTML"
-        ]
-    },
-    {
-        "name": "Movie Site",
-        "description": "Favorite movies.",
-        "url": "//maxbogus.github.io/movie_trailer_website/fresh_tomatoes.html",
-        "github": "//github.com/maxbogus/fullstack-nanodegree-vm/",
-        "wide_img": "img/movie_site-wide.png",
-        "small_img": "img/movie_site-small.png",
-        "skills": [
-            "Python", "CSS", "HTML"
-        ]
+class Portfolio extends React.Component {
+    constructor() {
+        super();
+
+        this.state = {
+            projectDetails: [
+                {
+                    "name": "Driver",
+                    "description": "Driver portal.",
+                    "url": "https://driver.gett.zone/",
+                    "github": null,
+                    "wide_img": "img/driver_gett_zone-wide.png",
+                    "small_img": "img/driver_gett_zone-small.png",
+                    "skills": [
+                        "JavaScript", "Python", "Django", "React", "PostgreSQL", "ES6"
+                    ]
+                },
+                {
+                    "name": "Task queue",
+                    "description": "Simple task tracker with server-side.",
+                    "url": null,
+                    "github": "//github.com/maxbogus/tasks_queue",
+                    "wide_img": "img/task_queue-wide.png",
+                    "small_img": "img/task_queue-small.png",
+                    "skills": [
+                        "JavaScript", "Python", "Flask", "AngularJS", "AJAX", "Tornado"
+                    ]
+                },
+                {
+                    "name": "Neighborhood Map",
+                    "description": "A single-page with an area and various points of interest.",
+                    "url": "https://maxbogus.github.io/Neighborhood_Map_Project/",
+                    "github": "//github.com/maxbogus/fullstack-nanodegree-vm/tree/master/vagrant/catalog",
+                    "wide_img": "img/neighborhood_map-wide.png",
+                    "small_img": "img/neighborhood_map-small.png",
+                    "skills": [
+                        "JavaScript", "HTML", "CSS", "KnockoutJS", "AJAX"
+                    ]
+                },
+                {
+                    "name": "Organizational structure",
+                    "description": "Small crud application to visualize organizational structure.",
+                    "url": null,
+                    "github": "//github.com/maxbogus/fullstack-nanodegree-vm/tree/master/vagrant/catalog",
+                    "wide_img": "img/org_structure-wide.png",
+                    "small_img": "img/org_structure-small.png",
+                    "skills": [
+                        "Python", "Flask", "HTML", "CSS", "SQL"
+                    ]
+                },
+                {
+                    "name": "Tournament",
+                    "description": "Swiss system tournament system.",
+                    "url": null,
+                    "github": "//github.com/maxbogus/fullstack-nanodegree-vm/",
+                    "wide_img": "img/tournament_test-wide.png",
+                    "small_img": "img/tournament_test-small.png",
+                    "skills": [
+                        "Python", "PostgreSQL", "Vagrant"
+                    ]
+                },
+                {
+                    "name": "Blog",
+                    "description": "Multi-user blog application.",
+                    "url": "//blog-140923.appspot.com/",
+                    "github": "//github.com/maxbogus/fullstack-nanodegree-vm/",
+                    "wide_img": "img/blog_project-wide.png",
+                    "small_img": "img/blog_project-small.png",
+                    "skills": [
+                        "Python", "Google App Engine", "HTML"
+                    ]
+                },
+                {
+                    "name": "Movie Site",
+                    "description": "Favorite movies.",
+                    "url": "//maxbogus.github.io/movie_trailer_website/fresh_tomatoes.html",
+                    "github": "//github.com/maxbogus/fullstack-nanodegree-vm/",
+                    "wide_img": "img/movie_site-wide.png",
+                    "small_img": "img/movie_site-small.png",
+                    "skills": [
+                        "Python", "CSS", "HTML"
+                    ]
+                }
+            ], showWarning: false
+        };
     }
-];
 
-var Project = function (data) {
-    var self = this;
-    this.name = ko.observable(data.name);
-    this.description = ko.observable(data.description);
-    this.url = ko.observable(data.url);
-    this.github = ko.observable(data.github);
-    this.wide_img = ko.observable(data.wide_img);
-    this.small_img = ko.observable(data.small_img);
-    this.skills = data.skills;
+    render() {
+        let projects = this.state.projectDetails.map((project, index) => {
+            let skills = project.skills.map((skill, index) => {
+                return (<button key={index} type="button" className="btn btn-secondary">{skill}
+                </button>)
+            });
+            return (
+                <div key={index}>
+                    <h3 className="text-uppercase">{project.name}</h3>
 
-    this.showUrl = ko.computed(function () {
-        return null === self.url();
-    });
-    this.showProject = ko.computed(function () {
-        return null === self.github();
-    });
-};
+                    <div className="btn-group btn-group-sm" role="group">
+                        {skills}
+                    </div>
+                    <br />
+                    <picture>
+                        <source srcSet={project.wide_img} media="(min-width: 800px)"/>
+                        <img src={project.small_img} className="img-fluid"/>
+                    </picture>
+                    <br />
+                    <p>{project.description}</p>
+                    <div className="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" className="btn btn-secondary"><a
+                            href={project.url} style={{disabled: project.url !== null}}>Project
+                            url</a></button>
+                        <button type="button" className="btn btn-secondary"><a
+                            href={project.github} style={{disabled: project.github !== null}}>Github</a>
+                        </button>
+                    </div>
+                    <hr />
+                </div>
+            )
+        }), warning = (this.state.showWarning) ? <div className="alert alert-success alert-dismissible" role="alert">
+            <p> You have chosen <b>filtered_text</b>. </p>
+        </div> : null;
 
-var ViewModel = function () {
-    var self = this;
+        return (
+            <div className="container">
+                <header className="row">
+                    <div className="col col-xs-4">
+                        <picture>
+                            <source className="img-fluid rounded float-left" srcSet="img/logo-wide.jpg"
+                                    media="(min-width: 800px)"/>
+                            <img className="img-fluid rounded" src="img/logo-small.jpg" alt="Logo"/>
+                        </picture>
+                    </div>
+                    <div className="col">
+                        <h1>Max Boguslavskiy</h1>
+                        <h4>Full Stack Team Lead</h4>
+                    </div>
+                </header>
+                <section className="row">
+                    <div className="col">
+                        <hr />
+                        <picture>
+                            <source srcSet="img/clouds-wide.jpg" media="(min-width: 800px)"/>
+                            <img className="img-fluid" src="img/clouds-small.jpg" alt="Main Image"/>
+                        </picture>
+                        <p className="text-center">
+                            My name is Max Boguslavskiy. I'm working in IT industry for 8+ years.
+                            I worked in Banki.ru, Acronis, Innova, Luxoft and Superscape.
+                            Currently i'm working as a Full Stack Team Lead at Gett.
+                        </p>
+                        <h2 className="col-12 col-md-auto text-center">Featured Work</h2>
+                        {warning}
+                    </div>
+                </section>
+                <section className="row">
+                    <div className="col col-md-auto">
+                        {projects}
+                    </div>
+                </section>
+                <footer className="row">
+                    <div className="col">
+                        <a href="//www.facebook.com/maxbogusblog/"><img srcSet="img/if_square-facebook_317727.png"/></a>
+                    </div>
+                    <div className="col">
+                        <a href="//maxbogus.blogspot.ru/"><img srcSet="img/if_blogger_28283.png"/></a>
+                    </div>
+                    <div className="col">
+                        <a href="//github.com/maxbogus/"><img srcSet="img/if_github_1632512.png"/></a>
+                    </div>
+                    <div className="col">
+                        <a id="codewars" href="//www.codewars.com/r/WcTjGg">
+                            <img className="img-fluid" src="img/if_codewars_1586249.png"/>
+                        </a>
+                    </div>
+                </footer>
+                <footer className="row">
+                    <div className="col">
+                        <p>©Max Boguslavskiy</p>
+                    </div>
+                </footer>
+            </div>
+        );
+    }
+}
 
-    this.projects = ko.observableArray([]);
-    self.filtered = ko.observable(null);
-
-    this.resetFilter = function () {
-        this.filtered(null)
-    };
-
-    self.setFilter = function (item) {
-        self.filtered(item);
-    };
-
-    projectObjects.forEach(function (project) {
-        self.projects().push(new Project(project));
-    });
-};
-
-ko.applyBindings(new ViewModel());
+ReactDOM.render(<Portfolio />, document.getElementById("portfolio"));

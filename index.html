@@ -6,110 +6,18 @@
     <title> Max Boguslavskiy: Portfolio site </title>
     <link href='//fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
-    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.2.0/css/zocial.css" rel="stylesheet">
     <link rel="icon" href="img/icon256-wide.png">
 </head>
 <body>
-<div class="container">
-    <header class="row">
-        <div class="col col-xs-4">
-            <picture>
-                <source class="img-fluid rounded float-left" srcset="img/logo-wide.jpg" media="(min-width: 800px)">
-                <img class="img-fluid rounded" src="img/logo-small.jpg" alt="Logo">
-            </picture>
-        </div>
-        <div class="col">
-            <h1>Max Boguslavskiy</h1>
-            <h4>Full Stack Team Lead</h4>
-        </div>
-    </header>
-    <section class="row">
-        <div class="col">
-            <hr>
-            <picture>
-                <source srcset="img/clouds-wide.jpg" media="(min-width: 800px)">
-                <img class="img-fluid" src="img/clouds-small.jpg" alt="Main Image">
-            </picture>
-            <p class="text-center">
-                My name is Max Boguslavskiy. I'm working in IT industry for 8+ years.
-                I worked in Banki.ru, Acronis, Innova, Luxoft and Superscape.
-                Currently i'm working as a Full Stack Team Lead at Gett.
-            </p>
-            <div class="w-100"></div>
-            <h2 class="col-12 col-md-auto text-center">Featured Work</h2>
-            <div class="alert alert-success alert-dismissible" role="alert"
-                 data-bind="visible: filtered, click: resetFilter">
-                <p> You have chosen <b data-bind="text: filtered"></b>. </p>
-            </div>
-        </div>
-    </section>
-    <section class="row">
-        <div class="col col-md-auto" data-bind="foreach: projects">
-            <div data-bind="visible: $data.skills.indexOf($parent.filtered())>= 0 || null === $parent.filtered()">
-                <h3 class="text-uppercase" data-bind="text: $data.name"></h3>
-
-                <div class="btn-group btn-group-sm" role="group"
-                     data-bind="foreach: { data: $data.skills, as: 'item' }">
-                    <button type="button" class="btn btn-secondary"
-                            data-bind="click: $root.setFilter, text: item"></button>
-                </div>
-                <br>
-                <picture>
-                    <source data-bind="attr: {srcset: $data.wide_img}" media="(min-width: 800px)">
-                    <img data-bind="attr: {src: $data.small_img}" class="img-fluid">
-                </picture>
-                <br>
-                <p data-bind="text: $data.description"></p>
-                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary"><a
-                            data-bind="attr: {href: $data.url}, css: {disabled: $data.showUrl}">Project url</a></button>
-                    <button type="button" class="btn btn-secondary"><a
-                            data-bind="attr: {href: $data.github}, , css: {disabled: $data.showProject}">Github</a>
-                    </button>
-                </div>
-                <hr>
-            </div>
-        </div>
-    </section>
-    <footer class="container text-center">
-        <div class="row">
-            <div class="col">
-                <a href="//www.facebook.com/maxbogusblog/" class="zocial facebook">Facebook</a>
-            </div>
-            <div class="col">
-                <a href="//maxbogus.blogspot.ru/" class="zocial blogger">Blogger</a>
-            </div>
-            <div class="col">
-                <a href="//github.com/maxbogus/" class="zocial github">Github</a>
-            </div>
-            <div class="col">
-                <a id="codewars" href="//www.codewars.com/r/WcTjGg">
-                    <img class="img-fluid" src="img/logo-square-red-big.png"> Codewars
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <p>© Created by Max Boguslavskiy</p>
-            </div>
-        </div>
-    </footer>
+<div id="portfolio">
 </div>
 </body>
-<script src="js/knockout-3.4.1.js"></script>
-<script src="js/code.js"></script>
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-        crossorigin="anonymous"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js" charset="utf-8"></script>
+<script type="text/babel" src="js/code.js"></script>
 <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
