@@ -41,6 +41,8 @@
     "webpack-bundle-tracker": "^0.2.0"
   },
   "dependencies": {
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-responsive-images": "^0.1.6"
   },
   "author": "Max Boguslavskiy",

@@ -11,8 +11,8 @@ class Portfolio extends React.Component {
                     "description": "Current portfolio",
                     "url": "https://maxbogus.github.io/portfolio_project/",
                     "github": "https://github.com/maxbogus/portfolio_project",
-                    "wide_img": "img/driver_gett_zone-wide.png",
-                    "small_img": "img/driver_gett_zone-small.png",
+                    "wide_img": "img/portfolio-wide.png",
+                    "small_img": "img/portfolio-small.png",
                     "skills": [
                         "JavaScript", "React", "ES6", "Bootstrap4"
                     ]
@@ -150,7 +150,7 @@ class Portfolio extends React.Component {
                 </div>
             )
         }), warning = (this.state.currentSkill !== null) ?
-            <div className="alert alert-success alert-dismissible" onClick={this._clearFilter.bind(this)} role="alert">
+            <div className="alert alert-warning alert-dismissible" onClick={this._clearFilter.bind(this)} role="alert">
                 <p> You have chosen <b>{this.state.currentSkill}</b>. Click on this message to clear filter.</p>
             </div> : null;
 
