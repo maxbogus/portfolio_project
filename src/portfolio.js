@@ -5,7 +5,18 @@ class Portfolio extends React.Component {
         super();
 
         this.state = {
-            projectDetails: [
+            projects: [
+                {
+                    "name": "Portfolio",
+                    "description": "Current portfolio",
+                    "url": "https://maxbogus.github.io/portfolio_project/",
+                    "github": "https://github.com/maxbogus/portfolio_project",
+                    "wide_img": "img/driver_gett_zone-wide.png",
+                    "small_img": "img/driver_gett_zone-small.png",
+                    "skills": [
+                        "JavaScript", "React", "ES6", "Bootstrap4"
+                    ]
+                },
                 {
                     "name": "Driver",
                     "description": "Driver portal.",
@@ -83,14 +94,35 @@ class Portfolio extends React.Component {
                         "Python", "CSS", "HTML"
                     ]
                 }
-            ], showWarning: false
+            ],
+            filteredProjects: [],
+            showWarning: false,
+            currentSkill: null
         };
     }
 
+    componentWillMount() {
+        this.setState({filteredProjects: this.state.projects})
+    }
+
+    _filterBySkill(event) {
+        let skillName = event.target.value;
+
+        let exist = this.state.projects.filter(project => project.skills.indexOf(skillName) >= 0);
+        if (exist) {
+            this.setState({currentSkill: skillName, filteredProjects: exist})
+        }
+    }
+
+    _clearFilter() {
+        this.setState({currentSkill: null});
+    }
+
     render() {
-        let projects = this.state.projectDetails.map((project, index) => {
+        let projects = this.state.filteredProjects.map((project, index) => {
             let skills = project.skills.map((skill, index) => {
-                return <button key={index} type="button" className="btn btn-secondary">{skill}</button>
+                return <button key={index} value={skill} type="button" onClick={this._filterBySkill.bind(this)}
+                               className="btn btn-secondary">{skill}</button>
             });
             return (
                 <div key={index}>
@@ -117,9 +149,10 @@ class Portfolio extends React.Component {
                     <hr />
                 </div>
             )
-        }), warning = (this.state.showWarning) ? <div className="alert alert-success alert-dismissible" role="alert">
-            <p> You have chosen <b>filtered_text</b>. </p>
-        </div> : null;
+        }), warning = (this.state.currentSkill !== null) ?
+            <div className="alert alert-success alert-dismissible" onClick={this._clearFilter.bind(this)} role="alert">
+                <p> You have chosen <b>{this.state.currentSkill}</b>. Click on this message to clear filter.</p>
+            </div> : null;
 
         return (
             <div className="container">
@@ -174,7 +207,7 @@ class Portfolio extends React.Component {
                     </div>
                 </footer>
                 <footer className="row">
-                    <div className="col">
+                    <div className="offset-4 col-3">
                         <p>©Max Boguslavskiy</p>
                     </div>
                 </footer>
