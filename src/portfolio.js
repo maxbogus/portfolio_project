@@ -1,3 +1,5 @@
+import React from 'react';
+
 class Portfolio extends React.Component {
     constructor() {
         super();
@@ -88,8 +90,7 @@ class Portfolio extends React.Component {
     render() {
         let projects = this.state.projectDetails.map((project, index) => {
             let skills = project.skills.map((skill, index) => {
-                return (<button key={index} type="button" className="btn btn-secondary">{skill}
-                </button>)
+                return <button key={index} type="button" className="btn btn-secondary">{skill}</button>
             });
             return (
                 <div key={index}>
@@ -182,4 +183,4 @@ class Portfolio extends React.Component {
     }
 }
 
-ReactDOM.render(<Portfolio />, document.getElementById("portfolio"));
+export default Portfolio;
