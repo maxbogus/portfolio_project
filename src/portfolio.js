@@ -20,7 +20,7 @@ class Portfolio extends React.Component {
                 {
                     "name": "Driver",
                     "description": "Driver portal.",
-                    "url": "https://driver.gett.zone/",
+                    "url": "https://driver.gett.ru/",
                     "github": null,
                     "wide_img": "img/driver_gett_zone-wide.png",
                     "small_img": "img/driver_gett_zone-small.png",
