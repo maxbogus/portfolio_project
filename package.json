@@ -25,7 +25,7 @@
     "grunt-mkdir": "^1.0.0",
     "grunt-processhtml": "^0.4.1",
     "grunt-responsive-images": "^1.10.1",
-    "html-react-parser": "^0.4.6",
+    "html-react-parser": "^0.6.2",
     "install": "^0.12.1",
     "jquery": "^3.2.1",
     "npm": "^6.4.1",
