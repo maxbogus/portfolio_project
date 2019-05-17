@@ -33,7 +33,7 @@
     "react-bootstrap": "^0.32.3",
     "react-bootstrap-autosuggest": "^0.5.0",
     "react-bootstrap-select": "^0.14.0",
-    "react-cookies": "^0.1.0",
+    "react-cookies": "^0.1.1",
     "react-dom": "^16.4.2",
     "react-hot-loader": "^4.3.5",
     "react-select": "^2.0.0",
