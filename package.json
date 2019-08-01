@@ -37,7 +37,7 @@
     "react-dom": "^16.4.2",
     "react-hot-loader": "^4.3.5",
     "react-select": "^2.0.0",
-    "webpack": "^4.26.0",
+    "webpack": "^4.39.0",
     "webpack-bundle-tracker": "^0.3.0"
   },
   "dependencies": {
