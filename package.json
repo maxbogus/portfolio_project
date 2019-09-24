@@ -38,7 +38,7 @@
     "react-hot-loader": "^4.3.5",
     "react-select": "^2.0.0",
     "webpack": "^4.26.0",
-    "webpack-bundle-tracker": "^0.3.0"
+    "webpack-bundle-tracker": "^0.4.3"
   },
   "dependencies": {
     "grunt-contrib-clean": "^2.0.0",
