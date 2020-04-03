@@ -12,7 +12,7 @@
     "babel-preset-es2016": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babili-webpack-plugin": "0.1.2",
-    "eslint-loader": "^2.1.0",
+    "eslint-loader": "^3.0.4",
     "eslint-plugin-react": "^7.0.1",
     "grunt": "^1.0.3",
     "grunt-cli": "^1.2.0",
