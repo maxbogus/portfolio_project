@@ -30,7 +30,7 @@
     "jquery": "^3.2.1",
     "npm": "^6.4.1",
     "react": "^16.4.2",
-    "react-bootstrap": "^0.32.3",
+    "react-bootstrap": "^1.0.1",
     "react-bootstrap-autosuggest": "^0.5.0",
     "react-bootstrap-select": "^0.14.0",
     "react-cookies": "^0.1.0",
